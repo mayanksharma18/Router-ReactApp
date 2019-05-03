@@ -1,7 +1,12 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
-const Home=()=>{
+class Home extends React.Component{
+ handleLogin=()=>this.props.click();
 
+  render(){
+    
+    
     return (
         <div>
   <div class="jumbotron jumbotron-fluid">
@@ -14,10 +19,10 @@ const Home=()=>{
     <div class="col-sm-4">
     <div class="row" style={{margin:'15px'}}>
     <div class="col">
-    <button type="button" class="btn btn-primary">SignUp</button>
+    <Link to='/signup'><button  type="button" class="btn btn-primary">SignUp</button></Link>
     </div>
     <div class="col">
-    <button type="button" class="btn btn-primary">Login</button>
+    <button type="button" onClick={this.handleLogin} class="btn btn-primary">Login</button>
     </div>
     </div>
     </div>
@@ -41,5 +46,5 @@ const Home=()=>{
     </div>
     )
 }
-
+}
 export default Home;
