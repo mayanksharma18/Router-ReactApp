@@ -23,6 +23,13 @@ handleLogin=()=>{
   })
   
 }
+registerhandleLogin=()=>{
+    
+  this.setState({
+    loggedin:true
+  })
+  
+}
 
   render(){
   return (
@@ -36,7 +43,8 @@ handleLogin=()=>{
             <Privateroute   loggedin={this.state.loggedin}       path='/contact' component={Contact} />
             <Route path="/anything" render={()=><h1>anything</h1>}/>
             <Route path="/users/:username" component={Users}/>
-            <Route path='/signup'render={props=><Signup{...props} click={this.handleLogin} />}/>
+            <Route path='/signup'render={props=><Signup {...props} click={this.registerhandleLogin} />}/>
+            <Route path='/login' render={(props)=><Signin {...props} click={this.registerhandleLogin}/>}/>
             <Route component={Error} />
           </Switch>
         </header>
