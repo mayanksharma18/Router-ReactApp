@@ -1,5 +1,5 @@
 import React from 'react';
-import Component from 'react'
+
 
 class Signup extends React.Component {
 

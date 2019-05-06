@@ -4,10 +4,11 @@ const Navigation=()=>{
 
     return (
  <div>    
-
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
 <NavLink exact to="/" activeStyle={{color:'green'}}>Home</NavLink>
-<NavLink to="/about"activeStyle={{color:'green'}}>About</NavLink>
-<NavLink to="/Contact"activeStyle={{color:'green'}}>Contact</NavLink>
+<NavLink  to="/courses"activeStyle={{color:'green'}}>Courses</NavLink>
+<NavLink  to="/startlearning"activeStyle={{color:'green'}}>Startlearning</NavLink>
+</nav>
 </div>  
     )
 }

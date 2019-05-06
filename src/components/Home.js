@@ -22,7 +22,7 @@ class Home extends React.Component{
     <Link to='/signup'><button  type="button" class="btn btn-primary">SignUp</button></Link>
     </div>
     <div class="col">
-   <Link to='/login' ><button type="button" onClick={this.handleLogin} class="btn btn-primary">Login</button></Link>
+   <Link to='/signin' ><button type="button" onClick={this.handleLogin} class="btn btn-primary">Login</button></Link>
     </div>
     </div>
     </div>

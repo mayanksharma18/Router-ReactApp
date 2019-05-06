@@ -39,7 +39,7 @@ class Signin extends React.Component {
         console.log(users)
         event.preventDefault()
         users.map((i)=>{
-            if(i.inputEmail==this.state.inputEmail && i.inputPassword==this.state.inputPassword){
+            if(i.inputEmail===this.state.inputEmail && i.inputPassword===this.state.inputPassword){
                 alert("Credentials passed");
                 this.props.click()
             }
